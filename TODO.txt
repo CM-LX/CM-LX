@@ -1,9 +1,12 @@
-
-
 HEADER
 fazer login/logout para simular membros/visitantes/admin
 marcar página atuaal
 conservar data ao introduzir jogos
+
+DESABILITAR COL ESQ -> só admin
+
+COL ESQ 
+impossível marcar vencedores
 
 FOOTER phase 1
 - links for pages
