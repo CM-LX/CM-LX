@@ -1,0 +1,84 @@
+
+
+HEADER
+fazer login/logout para simular membros/visitantes/admin
+marcar página atuaal
+conservar data ao introduzir jogos
+
+FOOTER phase 1
+- links for pages
+    - what this data means
+    - stay on the safe side
+    - who is on charge?
+    - do you need help? 
+    - disclaimer page
+    - contact page
+
+ODDS
+não funciona, dá erro
+colocar MyGains, GainsMax, GainsMin
+colocar ROI (+MIN, +MAX)
+
+BETS
+beta detail dá erro (list bet)
+
+TEAMS
+colocar MyGains, GainsMax, GainsMin
+colocar ROI (+MIN, +MAX)
+teams->matches atualizar só ao indicar vencedor
+id=9 2023-03 max bets errado
+id=7 div by zero: 194
+
+MEMBERSHIP
+signin page
+- login with Facebook
+    - username = FB.username
+    - ask for username
+        - username available? iframe
+- login with Google
+    - username = Google.username
+    - ask for username
+        - username available? iframe
+- login with email
+    - check email
+        - correctly formed ? iframe
+            - already a member: jump to login
+    - ask for username
+        - username available ? available
+    - choose membership type
+        -  1 month:  US$  2
+        -  6 months: US$  9
+        - 12 months: US$ 12
+
+LOGIN page
+- provide email
+    - check email
+        - not a member? repeat
+- member?
+    - hi, username
+    - provide password
+        - check password
+            - password OK ? proceed
+            - else after three errors send message password changed to md5, login and reset password
+    - forgot password?
+        - password changed to md5, login and reset password 
+
+MEMBER PAGE        
+- account details
+- change username
+    - set new username
+- change email
+    - provide new email
+        - send confirmation email (link)
+            - set new email
+- change password
+    - change password email
+        - reset password ===== lines 51 | 53 ?
+- change membership
+    - membership ends 2023-10-13
+        - buy  1 month:  US$ 2 (extend to $date)
+        - buy  6 months: US$ 9 (extend to $date)
+        - buy 12 months: US$12 (extend to $date)
+
+FOOTER phase 2
+- build pages
