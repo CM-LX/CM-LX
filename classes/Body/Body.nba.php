@@ -155,6 +155,9 @@ class Body {
 					<input type="text" name="odd1" value="' . $this->odd1 . '"> <input type="text" name="odd2" value="' . $this->odd2 . '"> 
 					<input type="submit" value="Create">
 				</form>
+			</div>
+			<div>
+				<a href="">Login</a> | <a href="">Logout</a>
 			</div>';
 			}
 			$this->html .=		 
