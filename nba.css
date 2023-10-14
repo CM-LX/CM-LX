@@ -1,0 +1,333 @@
+/* general styles */
+
+/* html selectors */
+
+html,
+body,
+wrapper {
+  width: 100%;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+}
+h1 {
+  margin-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+wrapper {
+  font-family: verdana, arial, helvetica;
+  line-height: 130%;
+}
+header {
+  background-color: black;
+  color: white;
+  height: 25px;
+  padding: 10px 0;
+  display: flex;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header a:hover {
+  color: yellow;
+  border-bottom: 1px solid yellow;
+}
+header form {
+  display: inline-block;
+}
+
+/* header */
+
+#header-left {
+  width: 30%;
+  padding: 0 20px;
+}
+#header-right {
+  width: 70%;
+  padding: 0 20px;
+}
+#header-right input[text] {
+  width: 40px;
+}
+
+/* main */
+
+main {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 85px);
+}
+
+/* main-left */
+
+#main-left {
+  font-size: 11px;
+  padding: 20px;
+  background-color: #eee;
+  width: 30%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.main-left-date {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding-left: 5px;
+  margin: 5px 0;
+}
+.main-left-match {
+  width: 100%;
+}
+.main-left-match .winner {
+  font-weight: bold;
+}
+.main-left-match.pro a {
+  color: green;
+}
+.main-left-match.con a {
+  color: red;
+}
+.main-left-pagination {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0 5px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main-left-pagination a {
+  color: white;
+  text-decoration: none;
+}
+.main-left-pagination a:hover {
+  color: yellow;
+}
+
+/* main-right */
+
+/* common styles */
+
+#main-right {
+  padding: 20px;
+  width: 70%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.page-title {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+}
+.first-level-title {
+  background-color: #ccc;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+.second-level-title {
+  background-color: #ddd;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+.third-level-title {
+  background-color: #eee;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: right;
+}
+
+.list-detail {
+  line-height: 1.8em;
+  text-align: right;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.span2 {
+  grid-column: span 2;
+}
+.span3 {
+  grid-column: span 3;
+}
+.span4 {
+  grid-column: span 4;
+}
+.span5 {
+  grid-column: span 5;
+}
+.f-sb {
+  display: flex;
+  justify-content: space-between;
+}
+.hidden {
+  display: none;
+}
+.delete-button {
+  color: white;
+  text-align: center;
+  /* padding: 1rem 0; */
+  font-size: 0.9rem;
+  border-radius: 5px;
+  display: block;
+}
+.delete-button:hover {
+  color: white;
+}
+.delete {
+  background-color: orange;
+}
+.delete:hover {
+  background-color: red;
+}
+.confirm-delete {
+  background-color: red;
+  display: none;
+}
+.confirm-delete:hover {
+  background-color: darkred;
+}
+
+/* modifiers, must come after the main selectors */
+
+.bgy {
+  background-color: yellow;
+}
+
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+}
+
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+
+.black {
+  color: black;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+.bg-white {
+  background-color: white;
+}
+.bg-green {
+  background-color: green;
+  color: white;
+}
+.bg-red {
+  background-color: red;
+  color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.no-pointer {
+  cursor: default;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+.pr-5 {
+  padding-right: 5px;
+}
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* page-specific styles */
+
+/* teams */
+
+#teams-new-team {
+  margin: 20px 0;
+}
+#team-name-input {
+  border: none;
+  background-color: transparent;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/* matches */
+
+#matches-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+
+/* odds */
+
+.gains-pro {
+  background-color: greenyellow;
+}
+.gains-against {
+  background-color: orange;
+}
+
+/* bets */
+
+.bet-detail {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+.day-matches {
+  border: 1px solid black;
+  border-top: 0;
+  padding: 20px;
+  margin-top: -20px;
+}
