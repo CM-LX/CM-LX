@@ -134,7 +134,7 @@ main {
   overflow-y: scroll;
 }
 .page-title {
-  background-color: darkblue;
+  background-color: #333;
   color: white;
   padding: 20px;
 }

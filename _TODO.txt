@@ -1,6 +1,3 @@
-CSS
-eliminar o azul FB, passar a preto
-
 HEADER
 fazer login/logout para simular membros/visitantes/admin
 marcar página atuaal
