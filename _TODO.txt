@@ -1,7 +1,10 @@
+COOKIES
+- create class Cookies for cm, loggedIn, loggedOut
+
 HEADER
-fazer login/logout para simular membros/visitantes/admin
-marcar página atuaal
-conservar data ao introduzir jogos
+- fazer login/logout para simular membros/visitantes/admin
+- marcar página atuaal
+- conservar data ao introduzir jogos
 
 DESABILITAR COL ESQ -> só admin
 
@@ -34,6 +37,9 @@ colocar ROI (+MIN, +MAX)
 teams->matches atualizar só ao indicar vencedor
 id=9 2023-03 max bets errado
 id=7 div by zero: 194
+
+USER
+- create class User for admin, member, user    
 
 MEMBERSHIP
 signin page

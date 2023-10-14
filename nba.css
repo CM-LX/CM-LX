@@ -64,6 +64,8 @@ header form {
 #header-right {
   width: 70%;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
 #header-right input[text] {
   width: 40px;

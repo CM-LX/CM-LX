@@ -6,22 +6,35 @@ include('Odd/Odd.nba.php');
 include('Bet/Bet.nba.php');
 
 class Body {
-
-	public $arrowUp;
-	public $arrowDown;
-
 	public $cm;
-
 	public $db;
-	public $match;
-	public $team;
-	public $odd;
-	public $betShow;
-	public $bet;
-	public $betListBet;
-	public $betListBets;
-	
+	private $get_id;
+	public $logout;
+	private $name;
 
+	private $arrowUp;
+	private $arrowDown;
+
+	public $title;
+	public $html;
+	
+	public $team;
+	private $createTeam;
+	private $updateTeam;
+	private $deleteTeam;
+	
+	public $match;
+	private $createMatch;
+	private $updateMatch;
+	private $deleteMatch;
+
+	public $odd;
+	
+	public $bet;
+	private $betShow;
+	private $betListBet;
+	private $betListBets;
+	
 	function __construct() {
 		$this->cm = isset($_COOKIE['ckcm']);
 
@@ -45,21 +58,24 @@ class Body {
 	}
 
 	function setVariables() {
-		$this->get_id 		= isset($_GET['id']) 			? intval($_GET['id']) 			: NULL;
-		$this->deleteTeam	= isset($_GET['deleteTeam'])	? intval($_GET['deleteTeam'])	: NULL;
-		$this->deleteMatch	= isset($_GET['deleteMatch'])	? intval($_GET['deleteMatch'])	: NULL;
-		$this->post_id 		= isset($_POST['id']) 			? intval($_POST['id']) 			: NULL;
-		$this->date 		= isset($_POST['date']) 		? strip_tags($_POST['date']) 	: NULL;
-		$this->team1 		= isset($_POST['team1']) 		? intval($_POST['team1']) 		: NULL;
-		$this->team2 		= isset($_POST['team2']) 		? intval($_POST['team2']) 		: NULL;
-		$this->odd1 		= isset($_POST['odd1']) 		? floatval($_POST['odd1']) 		: NULL;
-		$this->odd2 		= isset($_POST['odd2']) 		? floatval($_POST['odd2']) 		: NULL;
-		$this->winner 		= isset($_POST['winner']) 		? intval($_POST['winner']) 		: NULL;		
-		$this->name 		= isset($_POST['name']) 		? strip_tags($_POST['name']) 	: NULL;
-		$this->createTeam 	= isset($_POST['createTeam']) 	? 1 							: NULL;
-		$this->updateTeam 	= isset($_POST['updateTeam']) 	? 1 							: NULL;
-		$this->createMatch 	= isset($_POST['createMatch']) 	? 1 							: NULL;
-		$this->updateMatch 	= isset($_POST['updateMatch']) 	? 1 							: NULL;
+		// GET
+		$this->get_id 		= isset($_GET['id']) 			? intval($_GET['id']) 			: null;
+		// $this->logout 		= isset($_GET['logout']) 		? 1 							: null;
+		$this->deleteTeam	= isset($_GET['deleteTeam'])	? intval($_GET['deleteTeam'])	: null;
+		$this->deleteMatch	= isset($_GET['deleteMatch'])	? intval($_GET['deleteMatch'])	: null;
+		// POST
+		$this->post_id 		= isset($_POST['id']) 			? intval($_POST['id']) 			: null;
+		$this->date 		= isset($_POST['date']) 		? strip_tags($_POST['date']) 	: null;
+		$this->team1 		= isset($_POST['team1']) 		? intval($_POST['team1']) 		: null;
+		$this->team2 		= isset($_POST['team2']) 		? intval($_POST['team2']) 		: null;
+		$this->odd1 		= isset($_POST['odd1']) 		? floatval($_POST['odd1']) 		: null;
+		$this->odd2 		= isset($_POST['odd2']) 		? floatval($_POST['odd2']) 		: null;
+		$this->winner 		= isset($_POST['winner']) 		? intval($_POST['winner']) 		: null;		
+		$this->name 		= isset($_POST['name']) 		? strip_tags($_POST['name']) 	: null;
+		$this->createTeam 	= isset($_POST['createTeam']) 	? 1 							: null;
+		$this->updateTeam 	= isset($_POST['updateTeam']) 	? 1 							: null;
+		$this->createMatch 	= isset($_POST['createMatch']) 	? 1 							: null;
+		$this->updateMatch 	= isset($_POST['updateMatch']) 	? 1 							: null;
 	}
 	
 	function init() {
@@ -153,11 +169,11 @@ class Body {
 					<select name="team1"><option value="0">Team1</option>' . $this->team->getSelectList($this->team1) . '</select> 
 					<select name="team2"><option value="0">Team2</option>' . $this->team->getSelectList($this->team2) . '</select>
 					<input type="text" name="odd1" value="' . $this->odd1 . '"> <input type="text" name="odd2" value="' . $this->odd2 . '"> 
-					<input type="submit" value="Create">
+					<input type="submit" value="Create"> CM: ' . $this->cm . ' Logout: ' . $this->logout . ' 
 				</form>
-			</div>
-			<div>
-				<a href="">Login</a> | <a href="">Logout</a>
+				<div>
+					<a href="index.php?cm=1962">Login</a> | <a href="index.php?logout=1">Logout</a>
+				</div>
 			</div>';
 			}
 			$this->html .=		 

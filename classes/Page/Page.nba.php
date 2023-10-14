@@ -1,6 +1,7 @@
 <?php
 class Page {
 	public $cm;
+	public $logout;
 
 	function __construct()
 	{
@@ -17,7 +18,23 @@ class Page {
 				'path' => '/',
 				'samesite' => 'Strict',
 			]);
-		} else {
+		}
+
+		$logout = isset($_GET['logout']) ? true: null;
+
+		if(!$logout) {
+			$logout = isset($_COOKIE['logout']);
+		}
+
+		if($logout) {
+			setcookie('logout', 1, [ 
+				'expires' => time() + 3600,
+				'path' => '/',
+				'samesite' => 'Strict',
+			]);
+		}
+
+		if(!$this->cm && !$logout) {
 			die();
 		}
 	}
