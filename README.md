@@ -15,7 +15,7 @@ I am familiar with Angular, ReactJS, SASS, Python, Ruby on Rails, Laravel, NodeJ
 
 I am working since April 2023 on Javra.com, using Pimcore and Symphony.
 
-I have spent the previous 40 years of my life working as a journalist.
+I had spent the previous 40 years of my life (1982-2022) working as a journalist, and from 1983 to 1998 as editor of top national weekly magazines.
 
 In 1998, I launched, as editor, the first (monthly) science magazine in Portugal, "Super Interessante", which I had to abandon in March 2022 due to insurpassable differences with the publishing house.
 
