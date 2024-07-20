@@ -1,6 +1,6 @@
 My name is Carlos Madeira and I was born in Lisbon, Portugal, in 1962.
 
-I’m interested in everything web, end-to-end. I have 25 years of dealing with successive generations of HTML, CSS, JavaScript, PHP and MySQL.
+I’m interested in everything web, end-to-end. I have been dealing since 1997 with successive generations of HTML, CSS, JavaScript, PHP and MySQL.
 
 I created (end-to-end, including webdesign, logos and other images) some of the biggest websites in Portugal, for a webportal that was closed around 2015.
 You may be able to find them on some archive: http://viajar.clix.pt and http://animais.clix.pt
@@ -9,19 +9,15 @@ I created several public websites that for some reason were abandoned, like http
 
 I also created several private web apps to solve specific problems for friends and family, including a Notes system, a mini-Facebook (there was no Facebook then) for a university professor to have his doctoral students share ideas and documents. This professor retired around 2012, the app was deleted.
 
-Finally, I created some private web apps to use as cellphone magic tricks. Of course, this cannot be shared.
+I created some private web apps to use as cellphone magic tricks. Of course, this cannot be shared.
 
-I am familiar (done things) with Angular, ReactJS, SASS, Python, Ruby on Rails, Laravel, NodeJS, what else?
+I am familiar with Angular, ReactJS, SASS, Python, Ruby on Rails, Laravel, NodeJS, what else?
 
-I have zero experience in coding in a team. I also have a null CV on coding for some company.
+I am working since April 2023 on Javra.com, using Pimcore and Symphony.
 
 I have spent the previous 40 years of my life working as a journalist.
 
 In 1998, I launched, as editor, the first (monthly) science magazine in Portugal, "Super Interessante", which I had to abandon in March 2022 due to insurpassable differences with the publishing house.
-
-I’m currently learning how to use GitHub, as it seems to be a standard CV asset.
-
-I’m looking to collaborate on anything that helps me progress and builds my coding reputation.
 
 I read, speak and write fluent Portuguese, English, Spanish and French.
 
